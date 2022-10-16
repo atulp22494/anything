@@ -1,0 +1,17 @@
+<!-- usage of this. keyword -->
+
+<script>
+    class tv {   // class is a Storage where there are may functions are stored.
+       constructor(){
+        console.log("This is a constructor");
+        this.channel = ("AXN")      // if you want to store somthing in class u must use this. // this. stands for current class
+       }
+        volume(){
+            console.log("Dolby Sound");
+            console.log(this.channel);
+        }
+    }
+    var remote = new tv;   // object creation.
+    var remote1 = new tv;
+    remote.volume();
+</script>

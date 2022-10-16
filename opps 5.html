@@ -1,0 +1,25 @@
+
+
+<script>
+    class A{
+            myfunction1(){
+                console.log("hello! function 1");  
+            }
+            
+    }
+
+    class B{                  
+            myfunction2(){
+                console.log("Hey! function 2");
+            }
+
+            myfunction1(){
+                console.log("hello! function 1");      // method overriding
+            }
+    }
+    var rec = new B;
+    console.log(rec);
+
+    rec.myfunction1();
+    rec.myfunction2();
+</script>

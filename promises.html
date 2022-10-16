@@ -1,0 +1,22 @@
+<script>
+    var record = new Promise((res, rej) => {
+        console.log(typeof res, typeof rej);
+        //res("Task is completed")         //At a time any one can get execute. either res or rej ( resolve or reject which are functions of class promise)
+
+        //rej("Task is incomplete")
+
+    })
+    // console.log(record);
+
+    record.then((value) => {
+        //then is a handler for resolved values
+        //  console.log(value);
+    }).catch((error) => {
+        //console.log(error);
+    })
+
+        .finally(() => {
+            // console.log("proceed for net task");
+        })
+
+</script>

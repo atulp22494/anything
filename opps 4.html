@@ -1,0 +1,21 @@
+<!-- inheritance in JS -->
+
+<script>
+    class A{
+            myfunction1(){
+                console.log("hello! function 1");  // inheritance means inheriting somthing from parent to child.
+            }
+    }
+
+    class B extends A{                  // this extends A is called inheritance. Single level inheritance.
+            myfunction2(){
+                console.log("Hey! function 2");
+            }
+    }
+
+    var rec = new B;
+    console.log(rec);
+
+    rec.myfunction1();
+    rec.myfunction2();
+</script>
